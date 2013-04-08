@@ -1,10 +1,10 @@
-if typeof module != "undefined"
+if require?
   countdown = require('countdown')
   moment = require('moment')
 
   Twix = try
     require('twix')
-  catch _
+  catch e
     null
 else
   countdown = @countdown

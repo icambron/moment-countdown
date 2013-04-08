@@ -2,11 +2,14 @@
 (function() {
   var assertEqual, countdown, moment;
 
-  moment = require("moment");
-
-  countdown = require("countdown");
-
-  require('../../bin/moment-countdown');
+  if (typeof require !== "undefined" && require !== null) {
+    moment = require("moment");
+    countdown = require("countdown");
+    require('../../bin/moment-countdown');
+  } else {
+    moment = this.moment;
+    countdown = this.countdown;
+  }
 
   assertEqual = function(a, b) {
     if (a !== b) {
@@ -31,7 +34,9 @@
   describe("Twix.countdown()", function() {
     var end, start;
 
-    require("twix");
+    if (typeof module !== "undefined") {
+      require("twix");
+    }
     start = moment("1990-10-14T00:00:15-04:00");
     end = "1990-10-14T10:00:15-04:00";
     describe("non-all-day events", function() {

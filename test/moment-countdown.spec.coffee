@@ -1,6 +1,10 @@
-moment = require "moment"
-countdown = require "countdown"
-require '../../bin/moment-countdown'
+if require?
+  moment = require "moment"
+  countdown = require "countdown"
+  require '../../bin/moment-countdown'
+else
+  moment = @moment
+  countdown = @countdown
 
 assertEqual = (a, b) -> throw new Error("Found #{b}, expected #{a}") unless a == b
 
@@ -17,7 +21,7 @@ describe "moment.countdown()", ->
 
 describe "Twix.countdown()", ->
 
-  require "twix"
+  require "twix" unless typeof(module) == "undefined"
   start = moment "1990-10-14T00:00:15-04:00"
   end = "1990-10-14T10:00:15-04:00"
 
