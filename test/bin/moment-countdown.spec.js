@@ -31,25 +31,4 @@
     });
   });
 
-  describe("Twix.countdown()", function() {
-    var end, start;
-
-    if (typeof module !== "undefined") {
-      require("twix");
-    }
-    start = moment("1990-10-14T00:00:15-04:00");
-    end = "1990-10-14T10:00:15-04:00";
-    describe("non-all-day events", function() {
-      return it("returns a countdown", function() {
-        return assertEqual("10 hours", start.twix(end).countdown(countdown.HOURS).toString());
-      });
-    });
-    return describe("all-day events", function() {
-      return it("returns a countdown that represents the whole day", function() {
-        assertEqual("24 hours", start.twix(end, true).countdown(countdown.HOURS).toString());
-        return assertEqual("1 day", start.twix(end, true).countdown(countdown.DAYS).toString());
-      });
-    });
-  });
-
 }).call(this);
