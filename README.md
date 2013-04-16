@@ -20,13 +20,6 @@ moment().countdown("1982-5-25", countdown.MONTHS|countdown.WEEKS, NaN, 2).toStri
 
 See [Countdown's documentation](http://countdownjs.org/readme.html) for descriptions of those extra options.
 
-##Twix integration
-If you're using [Twix.js](http://icambron.github.io/twix.js), you can also use `countdown` on Twix ranges:
-
-```js
-moment().twix("1982-5-25").countdown(countdown.DAYS|countdown.MINUTES).toString(); //=> '11276 days, and 87 minutes'
-```
-
 ##Getting set up
 
 ###Browser
@@ -38,7 +31,7 @@ Grab [moment.js](https://raw.github.com/timrwood/moment/2.0.0/min/moment.min.js)
 <script src="moment-countdown.min.js"></script>
 ```
 
-And you're off the races. If you're also using Twix, include it after moment but before moment-countdown.
+And you're off the races.
 
 ###Node
 
