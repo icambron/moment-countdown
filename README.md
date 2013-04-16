@@ -1,6 +1,6 @@
 #moment-countdown
 
-moment-countdown is a tiny [moment.js](http://momentjs.com) plugin that integrates with [Countdown.js](http://coundownjs.org). The file is [here](https://raw.github.com/icambron/master/bin/moment-countdown-min.js). The NPM is `moment-countdown`.
+moment-countdown is a tiny [moment.js](http://momentjs.com) plugin that integrates with [Countdown.js](http://countdownjs.org). The file is [here](https://raw.github.com/icambron/master/bin/moment-countdown-min.js). The NPM is `moment-countdown`.
 
 ##How it works
 
