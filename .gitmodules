@@ -1,6 +1,3 @@
-[submodule "lib/moment"]
-	path = lib/moment
+[submodule "vendor/moment"]
+	path = vendor/moment
 	url = https://github.com/timrwood/moment.git
-[submodule "lib/twix"]
-	path = lib/twix
-	url = https://github.com/icambron/twix.js

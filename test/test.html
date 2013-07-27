@@ -1,22 +1,20 @@
 <html>
   <head>
+    <link rel="stylesheet" href="../vendor/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://raw.github.com/visionmedia/mocha/master/mocha.css" />
-    <script src="https://raw.github.com/visionmedia/mocha/master/mocha.js"></script>
-    <script src="../lib/moment/moment.js"></script>
-    <script src="../lib/countdown/countdown.js"></script>
-    <script src="../lib/twix/bin/twix.js"></script>
+    <script src="../vendor/mocha/mocha.js"></script>
     <script>mocha.setup('bdd')</script>
+
+    <script src="../vendor/moment/moment.js"></script>
+    <script src="../vendor/countdown/countdown.js"></script>
     <script src="../bin/moment-countdown.js"></script>
     <script src="bin/moment-countdown.spec.js"></script>
     <script>
-      $(function(){
-        mocha.run();
-      });
+      mocha.run();
     </script>
 
-  <body>
-    <div id="mocha"></div>
   </body>
 </html>
