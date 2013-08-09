@@ -1,10 +1,6 @@
-if require?
-  moment = require "moment"
-  countdown = require "countdown"
-  require '../../bin/moment-countdown'
-else
-  moment = @moment
-  countdown = @countdown
+moment = require?("moment") ? @moment
+countdown = require?("countdown") ? @countdown
+require?('../../bin/moment-countdown')
 
 assertEqual = (a, b) -> throw new Error("Found #{b}, expected #{a}") unless a == b
 
