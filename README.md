@@ -31,7 +31,7 @@ Grab [moment.js](https://raw.github.com/timrwood/moment/2.0.0/min/moment.min.js)
 <script src="moment-countdown.min.js"></script>
 ```
 
-And you're off the races.
+And you're off to the races.
 
 ###Node
 
