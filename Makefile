@@ -1,11 +1,13 @@
+PATH := node_modules/.bin:$(PATH)
+SHELL := /bin/bash
+
 build:
-	@rm -f bin/*
-	@find src -name '*.coffee' | xargs coffee -c -o bin
-	@find test -name '*.coffee' | xargs coffee -c -o test/bin
-	@node_modules/uglify-js/bin/uglifyjs bin/moment-countdown.js > bin/moment-countdown.min.js
+	@find src -name '*.coffee' | xargs coffee -c -o dist
+	@find test -name '*.coffee' | xargs coffee -c -o test
+	@uglifyjs -o dist/moment-countdown.min.js dist/moment-countdown.js
 
 test: build
-	@node_modules/mocha/bin/mocha --reporter spec test/bin/moment-countdown.spec.js
+	@mocha --reporter spec
 
 configure:
 	@npm install

@@ -1,6 +1,6 @@
 {
   "name": "moment-countdown",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Moment.js plugin for integrating with Countdown.js",
   "homepage": "http://icambron.github.com/moment-countdown",
   "author": "Isaac Cambron",
@@ -10,10 +10,11 @@
     "countdown": ">= 2.3.0"
   },
   "devDependencies": {
-    "mocha" : "1.8.2",
-    "uglify-js" : ">= 1.2.5"
+    "mocha" : "latest",
+    "uglify-js" : "latest",
+    "coffee-script" : "latest"
   },
-  "main": "bin/moment-countdown",
+  "main": "dist/moment-countdown",
   "scripts": {
     "test": "make test"
   },
@@ -27,9 +28,5 @@
   "bugs": {
     "url": "https://github.com/icambron/moment-countdown/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ]
+  "license": "MIT"
 }
