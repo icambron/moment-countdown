@@ -1,6 +1,6 @@
 {
   "name": "moment-countdown",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Moment.js plugin for integrating with Countdown.js",
   "homepage": "http://icambron.github.com/moment-countdown",
   "author": "Isaac Cambron",
