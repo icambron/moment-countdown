@@ -2,6 +2,8 @@
 
 moment-countdown is a tiny [moment.js](http://momentjs.com) plugin that integrates with [Countdown.js](http://countdownjs.org). The file is [here](https://raw.github.com/icambron/moment-countdown/master/dist/moment-countdown.min.js). The NPM is `moment-countdown`.
 
+It's worth noting that **the [actual source](src/moment-countdown.coffee) is litterally three lines of code**, so if including this as a dependency is somehow annoying, you should consider reading it and just implementing this yourself (you'll still need Countdown and Moment, natch). The MIT license is cool that way.
+
 ##How it works
 
 ```js
