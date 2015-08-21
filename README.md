@@ -8,16 +8,16 @@ It's worth noting that **the [actual source](src/moment-countdown.coffee) is lit
 
 ```js
 //from then until now
-moment("1982-5-25").countdown().toString(); //=> '30 years, 10 months, 14 days, 1 hour, 8 minutes, and 14 seconds'
+moment("1982-05-25").countdown().toString(); //=> '30 years, 10 months, 14 days, 1 hour, 8 minutes, and 14 seconds'
 
-//accepts a moment, JS Date, or anything parsable by the Date constructor
-moment("1955-8-21").countdown("1982-5-25").toString(); //=> '26 years, 9 months, and 4 days'
+//accepts a moment, JS Date, ISO-8601 string, or any other single arg taken my Momen's constructor
+moment("1955-08-21").countdown("1982-05-25").toString(); //=> '26 years, 9 months, and 4 days'
 
 //also works with the args flipped, like diff()
-moment("1982-5-25").countdown("1955-8-21").toString(); //=> '26 years, 9 months, and 4 days'
+moment("1982-05-25").countdown("1955-08-21").toString(); //=> '26 years, 9 months, and 4 days'
 
 //accepts all of countdown's options
-moment().countdown("1982-5-25", countdown.MONTHS|countdown.WEEKS, NaN, 2).toString(); //=> '370 months, and 2.01 weeks'
+moment().countdown("1982-05-25", countdown.MONTHS|countdown.WEEKS, NaN, 2).toString(); //=> '370 months, and 2.01 weeks'
 ```
 
 See [Countdown's documentation](http://countdownjs.org/readme.html) for descriptions of those extra options.
