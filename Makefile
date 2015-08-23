@@ -11,4 +11,3 @@ test: build
 
 configure:
 	@npm install
-	@git submodule update --init --recursive
