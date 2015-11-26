@@ -25,7 +25,7 @@ See [Countdown's documentation](http://countdownjs.org/readme.html) for descript
 ##Getting set up
 
 ###Browser
-Grab [moment.js](https://github.com/moment/moment/blob/master/moment.js), [countdown.js](https://github.com/mckamey/countdownjs/raw/master/countdown.min.js), and [moment-countdown.js](https://raw.github.com/icambron/moment-countdown/master/dist/moment-countdown.min.js). Then inside your header:
+Grab [moment.js](https://raw.githubusercontent.com/moment/moment/master/moment.js), [countdown.js](https://github.com/mckamey/countdownjs/raw/master/countdown.min.js), and [moment-countdown.js](https://raw.github.com/icambron/moment-countdown/master/dist/moment-countdown.min.js). Then inside your header:
 
 ```html
 <script src="moment.min.js"></script>
