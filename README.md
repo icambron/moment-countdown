@@ -1,10 +1,10 @@
-#moment-countdown
+# moment-countdown
 
 moment-countdown is a tiny [Moment.js](http://momentjs.com) plugin that integrates with [Countdown.js](http://countdownjs.org). The file is [here](https://raw.github.com/icambron/moment-countdown/master/dist/moment-countdown.min.js). The NPM is `moment-countdown`.
 
 It's worth noting that **the [actual source](src/moment-countdown.coffee) is literally three lines of code**, so if including this as a dependency is somehow annoying, you should consider reading it and just implementing it yourself or copying and pasting it into your app (you'll still need Countdown and Moment, natch).
 
-##How it works
+## How it works
 
 ```js
 //from then until now
@@ -22,9 +22,9 @@ moment().countdown("1982-05-25", countdown.MONTHS|countdown.WEEKS, NaN, 2).toStr
 
 See [Countdown's documentation](http://countdownjs.org/readme.html) for descriptions of those extra options.
 
-##Getting set up
+## Getting set up
 
-###Browser
+### Browser
 Grab [moment.js](https://raw.githubusercontent.com/moment/moment/master/min/moment.min.js), [countdown.js](https://github.com/mckamey/countdownjs/raw/master/countdown.min.js), and [moment-countdown.js](https://raw.github.com/icambron/moment-countdown/master/dist/moment-countdown.min.js). Then inside your header:
 
 ```html
@@ -35,7 +35,7 @@ Grab [moment.js](https://raw.githubusercontent.com/moment/moment/master/min/mome
 
 And you're off to the races.
 
-###Node
+### Node
 
 ```
 npm install moment-countdown
@@ -53,7 +53,7 @@ In your node code:
 require('moment-countdown');
 ```
 
-##License (MIT)
+## License (MIT)
 
 Copyright (c) 2013 Isaac Cambron
 
